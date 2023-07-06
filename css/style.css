@@ -71,14 +71,27 @@
 }
 
 .hero{
-    background-image: url(/images/banner/slider-1_0e0a21f7-d81d-4e65-b406-b44a6c90b1d8_2000x.webp);
+    /* background-image: url(/images/banner/slider-1_0e0a21f7-d81d-4e65-b406-b44a6c90b1d8_2000x.webp); */
     background-repeat: no-repeat;
     background-position:  unset;
     background-size: cover;
-    height: 95vh; 
+
     /* margin-top: 10px ; */
 }
 
+.hero img{
+    background-size: cover;
+    height: 60vh; 
+    width: 100%;
+}
+@media screen and (min-width:800px) {
+    .hero img{
+        background-size: cover;
+        height: 100vh; 
+        width: 100%;
+    }
+    
+}
 
 /*================ end of hero section ====================== */
 
@@ -261,3 +274,38 @@
     letter-spacing: 1px;
     margin: 20px 0;
 }
+
+/*============================ end of bottom banner section =============================== */
+
+.jorunal-container {
+    padding: 50px 0;
+}
+.jorunal-container h2{
+    font-size: 60px ;
+    margin-bottom: 20px;
+    text-align: center;
+
+}
+.journal-items{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px , 1fr));
+    grid-gap: 40px;
+    
+    
+
+}
+.journal-items img{
+    width: 100%;
+}
+.journals{
+    border: 2px solid var(--backgroundColor); 
+    padding: 20px;
+}
+.journals span , .journals p{
+    color: #989898; 
+    
+}
+.journals p{
+    margin: 20px 0;
+}
+ 
