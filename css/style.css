@@ -13,7 +13,6 @@
 }
 .btn{
     padding: 10px 20px;
-    border: none;
     background: var(--backgroundColor);
     border-radius: 3px;
     color: var(--color);
@@ -119,7 +118,7 @@
 .prodact-items{
     padding: 50px 0;
     display: grid;
-    grid-template-columns: repeat(auto-fit , minmax(350px , 1fr ));
+    grid-template-columns: repeat(auto-fit , minmax(300px , 1fr ));
     justify-content: space-between;
     grid-gap: 40px;
 }
