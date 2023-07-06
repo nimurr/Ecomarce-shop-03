@@ -1,5 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
 *{
     margin: 0;
+
+    font-family: 'Roboto', sans-serif;
+    transition: 0.5s;
 }
 
 :root {
@@ -14,6 +18,7 @@
     border-radius: 3px;
     color: var(--color);
     font-weight: bold;
+    cursor: pointer;
 }
 .container{
     width: 90%;
@@ -62,9 +67,9 @@
 .hero{
     background-image: url(/images/banner/slider-1_0e0a21f7-d81d-4e65-b406-b44a6c90b1d8_2000x.webp);
     background-repeat: no-repeat;
-    background-position: center;
+    background-position:  unset;
     background-size: cover;
-    height: 90vh;
+    height: 95vh; 
     /* margin-top: 10px ; */
 }
 
@@ -72,3 +77,65 @@
 /*================ end of hero section ====================== */
 
 
+.prodact-items{
+    padding: 50px 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit , minmax(350px , 1fr ));
+    justify-content: space-between;
+    grid-gap: 40px;
+}
+.product-item-text{
+    margin-top: -900px;
+    transition: 0.5s;
+    background: #0000009a;
+    backdrop-filter: blur(5px);
+    padding: 50px;
+
+
+}
+.product-item-text p{
+    color: #ffffff;
+    font-size: 40px;
+    text-decoration: underline;
+    margin-bottom: 10px;
+}
+.product-item{
+    background-position: center;
+    background-size: cover;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    text-align: center;
+    overflow: hidden;
+    border: 2px solid var(--backgroundColor);
+}
+.product-item:hover .product-item-text{
+    margin-top: 0px;
+   
+}
+.prodact-item1{
+    background-image: url(/images/prodect-show/img-1.webp)  ; 
+}
+
+.prodact-item2{
+    background-image: url(/images/prodect-show/img-2.webp)  ; 
+
+}
+.prodact-item3{
+    background-image: url(/images/prodect-show/img-3.webp)  ; 
+
+}
+.prodact-item4{
+    background-image: url(/images/prodect-show/img-4.webp)  ; 
+
+}
+.prodact-item5{
+    background-image: url(/images/prodect-show/img-5.webp)  ; 
+
+}
+.prodact-item6{
+    background-image: url(/images/prodect-show/img-6.webp)  ; 
+
+}
