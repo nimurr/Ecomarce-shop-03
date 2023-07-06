@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+}
+
+:root {
+    --backgroundColor : #00d2ff;
+    --color:white;
+    --textolor : #ddd;
+}
+.btn{
+    padding: 10px 20px;
+    border: none;
+    background: var(--backgroundColor);
+    border-radius: 3px;
+    color: var(--color);
+    font-weight: bold;
+}
+.container{
+    width: 90%;
+    margin: auto;
+}
+/* basic css style add -------------------- */
+
+
+
+.menus{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 80px;
+    border-bottom: 2px solid var(--backgroundColor);
+    /* box-shadow: 0px 0px 8px 2px var(--backgroundColor); */
+}
+.menus ul{
+    display: flex;
+}
+.menus ul li{
+    margin-left: 30px;
+    list-style: none;
+    font-size: 25px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.menus ul li:hover{
+    color: var(--backgroundColor);
+}
+.fa-shopify{
+    position: relative;
+}
+.menus ul li span{
+    background: #00d2ff;
+    padding: 5px 8px ;
+    border-radius: 50%;
+    font-size: 10px;
+    position: absolute;
+    top: 10px;
+    margin-left: -5px;
+    color:var(--color);
+
+}
+
+.hero{
+    background-image: url(/images/banner/slider-1_0e0a21f7-d81d-4e65-b406-b44a6c90b1d8_2000x.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 90vh;
+    /* margin-top: 10px ; */
+}
+
+
+/*================ end of hero section ====================== */
+
+
